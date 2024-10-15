@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'arapkere1';
+    src: url(font/Akira\ Expanded\ Demo.otf);
+}
+ @font-face {
+    font-family: "kuku";
+    src: url(font/coolvetica\ rg.otf);
+ }
+
+ @font-face {
+    font-family: 'kaka';
+    src: url(font/ShadowendPersonalUse-eZOZn.ttf);
+ }
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 7px 10px;
+}
+
+.logo {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 4;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #070707;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    font-family: 'arapkere1', sans-serif;
+}
+
+.nav-links a:hover {
+    background-color: greenyellow;
+    padding: 4px 4px;
+    border-radius: 5px;
+}
+
+.login a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.login {
+    color: #000000;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    left: 55%;
+    gap: 20px;
+    font-family: 'arapkere1', sans-serif;
+    font-size: 15px;
+}
+
+.login {
+    position: relative;
+    z-index: 2;
+}
+
+.box {
+    background-color: greenyellow;
+    height: 36px;
+    width: 80px;
+    border-radius: 12px;
+}
+
+.box{
+    position: relative;
+    left: 670px;
+    z-index: 0;
+}
+
+.box1 {
+    background-color: rgb(255, 255, 255);
+    width: 1303px;
+    height: 550px;
+    border-radius: 20PX;
+}
+
+.box1 {
+    position: absolute;
+    bottom: 15PX;
+    left: 33PX;
+}
+
+.kaela {
+    box-sizing: border-box;
+}
+
+.kaela {
+    cursor: default;
+    font-family: 'kaka', sans-serif;
+    position: absolute;
+    bottom: 300px;
+    left: 320px;
+    font-size: 200px;
+    z-index: 0;
+}
+
+.cihuy {
+    font-family: 'kuku', sans-serif;
+    font-size: 20px;
+    max-width: 500px;
+    position: absolute;
+    top: 360px;
+    left: 450px;
+}
+
+.cihuy {
+    cursor: default;
+    text-align: center;
+    z-index: 2;
+}
+
+.stabilo {
+
+    background-color: greenyellow;
+    height: 20px;
+    width: 90px;
+    position: absolute;
+    left: 835px;
+    bottom: 237px;
+    z-index: 1;
+}
+
+.baju {
+    position: absolute ;
+    left: 90px;
+    top: 250px;
+    transform: rotate(30deg);
+    width: 200px;
+    height: 200px;
+    margin: 0%;
+}
+
+.baju {
+    z-index: 1;
+}
+
+.jaja {
+   margin-left: auto;
+   margin-bottom: auto;
+}
+
+footer {
+    margin-top: 600px;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

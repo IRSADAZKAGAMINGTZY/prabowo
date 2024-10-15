@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'arapkere1';
+    src: url(font/Akira\ Expanded\ Demo.otf);
+}
+ @font-face {
+    font-family: "kuku";
+    src: url(font/coolvetica\ rg.otf);
+ }
+
+ @font-face {
+    font-family: 'kaka';
+    src: url(font/ShadowendPersonalUse-eZOZn.ttf);
+ }
+
+ @font-face {
+    font-family: 'lala';
+    src: url(font/MontserratBold-DOWZd.ttf)
+ }
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #181818;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    padding: 7px 10px;
+}
+
+.logo {
+    color: #000000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+    z-index: 4;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #070707;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    font-family: 'arapkere1', sans-serif;
+}
+
+.nav-links a:hover {
+    background-color: greenyellow;
+    padding: 5px 5px;
+    border-radius: 5px;
+}
+
+.login a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.login {
+    color: #000000;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    left: 55%;
+    gap: 20px;
+    font-family: 'arapkere1', sans-serif;
+    font-size: 15px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.login {
+    position: relative;
+    z-index: 2;
+}
+
+.box {
+    background-color: greenyellow;
+    height: 36px;
+    width: 80px;
+    border-radius: 12px;
+}
+
+.box{
+    position: relative;
+    left: 670px;
+    z-index: 0;
+}
+
+.banner {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner .product {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 70px;
+    left: 720px;
+    transform: translate(-50%);
+    z-index: 1;
+    transition: 0.7s;
+    --left: -70px;
+    display: flex;
+}
+
+.banner .product .soda {
+    background: 
+    var(--url) var(--left) 0, url(image/freepik-export-20241012070836Mg0w.png);
+    background-size: auto 100%;
+    width: 260px;
+    aspect-ratio: 2/4;
+    background-blend-mode: multiply;
+    mask-image: url(image/freepik-export-20241012070836Mg0w.png);
+    mask-size: auto 100%;
+    transition: 0.7s;
+    position: absolute;
+    left: 35%;
+    transform: translate(-50%);
+    z-index: 8;
+}
+
+.banner .product:hover {
+    --left: -340px ;
+    transform: translate(-50%) translateY(-50px);
+
+}
+
+.banner .product .soda:nth-child(2) {
+    opacity: 0;
+}
+
+.banner .product:hover .soda:nth-child(2) {
+    opacity: 1;
+}
+
+.yuyu {
+    color: white;
+    font-family: 'arapkere1', sans-serif;
+    position: absolute;
+    right: 25px;
+    bottom: 30px;
+    transform: scaleY(4.3);
+    font-size: 200px;
+    z-index: 0;
+    cursor: default;
+}
+
+footer {
+    margin-top: 600px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+}
+
+.social-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.social-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+.card-container {
+    display: flex;
+    position: absolute;
+    top: 800px;
+    left: 200px;
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    z-index: 7;
+    cursor: default;
+}
+
+
+.card-image {
+    flex: 1;
+}
+
+.card-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card-content {
+    flex: 2;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-family: 'arapkere1', sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin: 0;
+}
+
+.card-description {
+    color: black;
+    font-family: 'kuku', sans-serif;
+    flex-grow: 1;
+}
+
+.card-button {
+    padding: 10px 15px;
+    background-color: greenyellow;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    
+}
+
+.card-button:hover {
+    background-color: greenyellow;
+    box-shadow: 0 0 30px rgb(166, 255, 0), 0 0 60px rgba(145, 255, 0, 0.8);
+
+}
+
+.batu1 {
+    position: absolute;
+    z-index: 2;
+    right: 5px;
+    transform: rotate(20deg);
+}
+
+.batu2 {
+    position: absolute;
+    z-index: 3;
+    top: 700px;
+    transform: rotate(-20deg);
+}
